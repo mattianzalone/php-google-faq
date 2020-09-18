@@ -73,6 +73,8 @@ li:hover{
 .container{
     width: 80vw;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container h2{
@@ -92,4 +94,20 @@ footer{
     height: 50px;
     margin: 0 auto;
     background-color: lightgrey;
+}
+
+
+
+.footerRight{
+    display: flex;
+}
+
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 14px;
+    color: #5f6368;
+    padding-top: 15px;
 }

@@ -24,11 +24,6 @@ $domande = [
     ]
 
 ];
-for ($i=0; $i < count($domande) ; $i++) {
-    foreach ($domande as $key => $value) {
-
-    }
-}
 
 ?>
 
@@ -65,22 +60,32 @@ for ($i=0; $i < count($domande) ; $i++) {
         <main>
             <div class="container">
                 <div class="PrimaDomanda">
-                    <h2> <?php for ($i=0; $i < count($domande) ; $i++) {
-                        foreach ($domande as $key => $value) {
-                            echo $value['titolo'];
-                        }
-                    } ?></h2>
-                    <p><?php for ($i=0; $i < count($domande) ; $i++) {
-                        foreach ($domande as $key => $value) {
-                            echo $value['descrizione'];
-                        }
-                    } ?></p>
+                    <?php foreach ($domande as $value) { ?>
+                        <h2><?php echo $value['titolo']; ?></h2>
+                        <p><?php echo $value['descrizione']; ?></p>
+                    <?php } ?>
                 </div>
             </div>
         </main>
         <footer>
             <div class="container">
-
+                <ul class="footerLeft">
+                    <li>Google</li>
+                    <li>Tutto su Google</li>
+                    <li>Privacy</li>
+                    <li>Termini</li>
+                </ul>
+                <ul class="footerRight">
+                    <li></li>
+                    <li>
+                        <select class="" name="">
+                            <option value="">italiano</option>
+                            <option value="">tedesco</option>
+                            <option value="">inglese</option>
+                            <option value="">cinese</option>
+                        </select>
+                    </li>
+                </ul>
             </div>
         </footer>
     </body>
